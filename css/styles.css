@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: calc(100vh - 54px); 
+    background-image: linear-gradient(rgb(30, 0, 30),rgb(255, 200, 98)); 
+    color: #F8F8F8;
+  }
+  
+  main {
+    max-width: 980px;
+    margin: 54px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  main h1 {
+    font-size: 38px;
+  }
+  
+  main p {
+    font-size: 24px;
+    margin-top: 16px;
+    color: #ffffff;
+  }
+  
+  main strong {
+    color:  rgb(255, 200, 98) ;
+  }
+  
+  main input {
+    height: 52px;
+    width: 600px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 36px;
+    background-color: #1C1B1B;
+    font-size: 16px;
+    color: #EEE;
+    outline: none;
+  }
+  
+  input:focus {
+    border: 1px solid #E83752;
+  }
+  
+  main .key-func {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  main .key-func p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  main .key-func .func {
+    display: flex;
+    align-items: center;
+  }
+  
+  main .key-func input {
+    width: 40px;
+    height: 28px;
+    margin-top: 0px;
+    padding: 5px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  main button {
+    background-color: rgb(255, 200, 98);
+    color: #000000;
+    height: 52px;
+    width: calc(300px - 10px);
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  
+    transition: filter 0.2s ease-in;
+  }
+  
+  main button:hover {
+    filter: brightness(0.9);
+  }
+  
+  main .buttons {
+    margin-top: 26px;
+    max-width: 600px;
+  }
+  
+  main button + button {
+    margin-left: 10px;
+  }
+  
+  main .result {
+    width: 868px;
+    padding: 10px;
+    margin-top: 32px;
+  }
+  
+  main .result p {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
+  
+  main .result p strong {
+    margin-left: 8px;
+  
+    max-width: 480px;
+  }
+  
+  .alertSpan {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 300px;
+    height: 60px;
+    padding: 20px 25px;
+    background-color: #000000;
+    z-index: 2;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 18px;
+    display: none;
+  }

@@ -1,0 +1,40 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIFRA DE CÉSAR</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1><strong>Criptografia/Descriptografia</strong> por Função de Recorrência</h1>
+      <p>Insira a mensagem que deseja <strong>criptografar</strong></p>
+
+      <div class="key-func">
+        <p>Defina a <strong>chave</strong> de criptografia: f(x) =</p>
+        <div class="func">
+          <input type="text" id="A" />
+          <span>x² + ou - </span>
+          <input type="text" id="B" />
+          <span>x + ou -</span>
+          <input type="text" id="C" />
+        </div>
+      </div>
+
+      <input type="text" placeholder="Insira o texto" id="codeEncrypt" />
+
+      <div class="buttons">
+        <button type="button" class="btnEncrypt" onclick="encrypt()">
+          Criptografar
+        </button>
+        <button type="button" onclick="decrypt()">Descriptografar</button>
+      </div>
+
+      <div class="result"></div>
+    </main>
+  </body>
+</html>
